@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    color: #0f172a;
+    background: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #0ea5e9;
+    text-decoration: none;
+}
+
+.float-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+
+.space {
+    height: 28px;
+}
+
+nav {
+    background: #0ea5e9;
+    border-bottom: 4px solid #0284c7;
+}
+
+nav .brand {
+    float: left;
+    padding: 12px 0;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+
+nav .menu {
+    list-style: none;
+    margin: 0;
+    padding: 14px 0;
+    text-align: right;
+}
+
+nav .menu li {
+    display: inline-block;
+    margin-left: 18px;
+}
+
+nav .menu a {
+    color: #fff;
+    font-weight: 600;
+}
+
+header {
+    color: #fff;
+    /* Image taken by Amir */
+    background:linear-gradient(to bottom, rgba(2, 132, 199, .65), rgba(2, 132, 199, .65)), url("../images/banner.jpg") center/cover no-repeat;
+}
+
+header .container {
+    padding: 80px 18px;
+}
+
+header h1 {
+    margin: 0 0 6px;
+    font-size: 40px;
+}
+
+header .description {
+    margin: 0;
+    max-width: 720px;
+    font-weight: 300;
+}
+
+main {
+    padding: 26px 0 46px;
+}
+
+main h2 {
+    margin: 0 0 12px;
+    font-size: 26px;
+    border-left: 6px solid #0ea5e9;
+    padding-left: 10px;
+}
+
+.intro {
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    padding: 16px;
+}
+
+.intro-figure {
+  float: right;
+  width: 290px;
+  margin: 0 0 10px 16px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  background: #fff;
+}
+
+.intro-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.intro-figure figcaption {
+  font-size: 13px;
+  color: #334155;
+  padding: 6px 8px;
+  background: #f1f5f9;
+  text-align: center;
+  border-top: 1px solid #e2e8f0;
+}
+
+.row {
+    margin: 0 -10px;
+    padding: 10px;
+}
+
+.row-3 {
+    width: 33.3333%;
+}
+
+.row-2 {
+    width: 50%;
+}
+
+.card {
+    float: left;
+    padding: 0 10px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 14px;
+    min-height: 550px;
+}
+
+.card h3 {
+    margin: 6px 0 8px;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 15px;
+}
+
+figure {
+    margin: 0 0 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+figure img {
+    display: block;
+}
+
+figure figcaption {
+    font-size: 13px;
+    color: #334155;
+    padding: 6px 8px;
+    background: #f1f5f9;
+}
+
+footer {
+    background: #0ea5e9;
+    color: #fff;
+    border-top: 4px solid #0284c7;
+}
+
+footer .container {
+    padding: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* tablet view */
+@media (max-width: 900px) {
+    .intro-figure {
+        width: 260px;
+    }
+}
+
+/* phone view */
+@media (max-width: 760px) {
+
+    .row-3,
+    .row-2 {
+        width: 100%;
+    }
+
+    nav .menu {
+        text-align: left;
+        padding-top: 6px;
+    }
+
+    nav .brand {
+        float: none;
+        display: inline-block;
+        margin-right: 12px;
+    }
+    .intro-figure {
+        float: left;
+    }
+}
