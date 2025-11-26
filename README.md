@@ -1,2 +1,2 @@
 # CPAN1340NF-city-guide
-A project by Amir and Hunter.
+A project by Amir and David.
