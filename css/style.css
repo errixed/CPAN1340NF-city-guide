@@ -54,8 +54,8 @@ nav .brand {
 
 nav .logo {
     float: left;
-    height: 40px;        /* Adjust if needed */
-    margin: 8px 10px 0 0; /* Top, Right, Bottom, Left spacing */
+    height: 40px;
+    margin: 8px 10px 0 0;
 }
 
 nav .menu {
@@ -73,6 +73,10 @@ nav .menu li {
 nav .menu a {
     color: #fff;
     font-weight: 600;
+}
+
+nav .menu a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -232,6 +236,13 @@ footer .copyright {
     font-size: 14px;
 }
 
+.highlight-card {
+    float: none;
+    width: 100%;
+    min-height: auto;
+    margin-bottom: 24px;
+}
+
 /* tablet view */
 @media (max-width: 900px) {
     .intro-figure {
@@ -240,7 +251,7 @@ footer .copyright {
 }
 
 /* phone view */
-@media (max-width: 760px) {
+@media (max-width: 768px) {
 
     .row-3,
     .row-2 {

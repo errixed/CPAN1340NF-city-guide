@@ -4,12 +4,14 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Toronto in a Day — City Guide</title>
+    <title>All Highlights — Toronto in a Day</title>
     <!-- external resource for font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- https://www.iconfinder.com/icons/3252945/canada_cn_tower_landmark_toronto_icon -->
     <link rel="icon" type="image/png" href="../images/logo.png">
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/highlights.css" />
+    <link rel="stylesheet" href="../css/lightbox.css">
 </head>
 
 <body>
@@ -29,17 +31,39 @@
 
     <header id="header">
         <div class="container">
-            <h1>&#x1F3D7;&#xFE0F; Comming Soon!!!</h1>
+            <h1>All Highlights</h1>
+            <p class="description">Read the full articles for each must-see stop in Toronto.</p>
         </div>
     </header>
 
     <main id="main" class="container">
+        <div class="space"></div>
 
-        <h3>This part of your Toronto adventure is still under construction.<br>
-            Grab a coffee at St. Lawrence Market and check back soon!</h3>
+        <div class="highlights-layout">
+            <div class="sidebar-column">
+                <aside class="sidebar">
+                    <h3>Jump to a Highlight</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#cn-tower">CN Tower</a></li>
+                        <li><a href="#360-restaurant">360 Restaurant</a></li>
+                        <li><a href="#harbourfront">Harbourfront</a></li>
+                    </ul>
+                </aside>
+                <aside class="sidebar">
+                    <h3>Toronto News</h3>
+                    <div id="news-container" class="sidebar-list">
+                        <p>Loading news...</p>
+                    </div>
+                </aside>
+            </div>
 
+            <section id="highlights-list" class="content-main"></section>
+        </div>
+
+        <div class="space"></div>
     </main>
-    
+
+
     <footer id="footer">
         <div class="container float-container">
             <div class="footer-col">
@@ -62,17 +86,16 @@
             <div class="footer-col">
                 <h4>About this guide</h4>
                 <p>Built to help you see Toronto’s skyline, food, and waterfront in just one day.</p>
-
             </div>
-
-
         </div>
         <div class="copyright">
-            <p>&copy; 2025 Amir &amp; Hunter.</p>
-
+            <p>&copy; 2025 Amir &amp; David.</p>
         </div>
     </footer>
 
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../js/lightbox.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
