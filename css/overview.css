@@ -81,8 +81,12 @@ nav .menu a:hover {
 
 header {
     color: #fff;
-    /* Image taken by Amir */
-    background:linear-gradient(to bottom, rgba(2, 132, 199, .65), rgba(2, 132, 199, .65)), url("../images/banner.jpg") center/cover no-repeat;
+    background: linear-gradient(
+        to bottom,
+        rgba(2, 132, 199, .65),
+        rgba(2, 132, 199, .65)
+    ),
+    url("../images/banner.jpg") center/cover no-repeat;
 }
 
 header .container {
@@ -243,14 +247,12 @@ footer .copyright {
     margin-bottom: 24px;
 }
 
-/* tablet view */
 @media (max-width: 900px) {
     .intro-figure {
         width: 260px;
     }
 }
 
-/* phone view */
 @media (max-width: 768px) {
 
     .row-3,
@@ -282,7 +284,7 @@ footer .copyright {
 
 
 .calendars-wrapper {
-    display: flex;          
+    display: flex;         
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -293,7 +295,7 @@ footer .copyright {
     border: 1px solid #e2e8f0;
     border-radius: 8px;
     padding: 16px;
-    flex: 1 1 320px;        
+    flex: 1 1 320px;
 }
 
 .month-card h3 {
@@ -315,24 +317,40 @@ footer .copyright {
 }
 
 #january-month {
-    display: grid;                  
-    grid-template-rows: auto 1fr;   
+    display: grid;
+    grid-template-rows: auto 1fr;
     row-gap: 10px;
 }
 
 #february-month {
-    display: flex;                 
+    display: flex;
     flex-direction: column;
     row-gap: 10px;
+}
+
+.day-cell {
+    cursor: pointer;
 }
 
 .day-cell.event-day {
     background-color: #e2e8f0;
     font-weight: 600;
 }
+
 .events-section {
     margin-top: 24px;
 }
+
 .events-section ul {
     padding-left: 20px;
+}
+
+.day-cell:hover {
+    background-color: #e0f2fe;   
+    transform: scale(1.03);      
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.day-cell.event-day:hover {
+    background-color: #bfdbfe;
 }
