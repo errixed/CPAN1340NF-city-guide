@@ -75,7 +75,18 @@ nav .menu a {
     font-weight: 600;
 }
 
-nav .menu a:hover {
+footer ul li a {
+    color: #fff;
+}
+
+footer h4 a {
+    color: #fff;
+}
+
+footer h4 a:hover,
+footer ul li a:hover,
+nav .menu a:hover
+ {
     text-decoration: underline;
 }
 
